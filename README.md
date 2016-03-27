@@ -145,6 +145,15 @@ Manuel olarak resmin adresini almak için ise ( dikkat etmemiz gereken kısım /
 $sBot->thumbnail = "/path/to/wp-content/uploads/125x125.png";
 ```
 
+Örneğin resimlerimiz www.siteadresi.com/wp-content/uploads/2016/03 dizininde olduğunu varsayalım,
+işlemlerimiz yaptığımız dosyamız www.siteadresi.com/bot/ajax.php olsun. Bu durumda, 
+
+``` php
+$create_img_name = "deneme-resmim-99887766";
+$sBot->thumbnail = "/2016/03/$create_img_name".".jpg";
+```
+kullanımı dosya yolunu başarılı bir şekilde thumbnail olarak belirmemizi sağlar.
+
 
 Verileri Kayıt Etmek
 ===========================
